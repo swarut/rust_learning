@@ -2,7 +2,7 @@
 use std::io;
 use std::fs::{self, DirEntry};
 use std::path::Path;
-
+// use std::fs::File;
 
 fn main() -> std::io::Result<()> {
     println!("Please specify path");
@@ -37,3 +37,10 @@ fn visit_dirs(dir: &Path, cb: &Fn(&DirEntry)) -> io::Result<()> {
     }
     Ok(())
 }
+
+
+// fn get_file_list_from_bridge_sort(filename: string) -> Vec<string> {
+//     let mut input = File::open(filename);
+//     let mut input_buffer = String::new();
+
+// }
